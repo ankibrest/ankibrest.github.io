@@ -243,6 +243,10 @@ footer hr {
   margin: 0 auto;
 }
 
+.education h1{
+  text-align:left;
+}
+
 @media screen and (min-width: 40em) {
   .education {
     width: 100%;
@@ -310,3 +314,57 @@ ul.subdeck{
 li.done { list-style-image: url(img/liDone.svg); }
 li.todo { list-style-image: url(img/liTodo.svg); }
 li.progress { list-style-image: url(img/liProgress.svg); }
+span.prof{color:grey; font-size:.7em;}
+
+
+/*CSS for tabs from w3schools*/
+
+/* Style the tab */
+.tab {
+ overflow: hidden;
+ border-left: 1px solid #ccc;
+ border-right: 1px solid #ccc;
+
+ background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+ background-color: inherit;
+ font-family: sans-serif;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+ background-color: #ace0fc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+ background-color: #0c0071;
+ color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

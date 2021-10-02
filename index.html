@@ -22,40 +22,47 @@
 
 
 	<div class="container">
+		<div class="tab">
+
+  <button class="tablinks" onclick="openUE(event, 'loco')">UE18</button>
+	<button class="tablinks" onclick="openUE(event, 'infectio')">UE19</button>
+
+	<button class="tablinks" onclick="openUE(event, 'neuro')" id="defaultOpen">UE20</button>
+
+</div>
+
+		<div id="loco" class="tabcontent"></div>
+		<div id="infectio" class="tabcontent"></div>
+
+		<div id="neuro" class="tabcontent">
 		<section class="education">
 			<h1>
-UE20 Système neurosensoriel et psychiatrie
+Système neurosensoriel et psychiatrie
 </h1>
 		</section>
 
 
 		<section class="experience">
 			<div class="row">
-				<div class="grid-2">
-					<img src="img/apercuNeuroAnat.svg" width="100%"/>
-				</div>
-				<div class="grid-4">
-					Neuro-anatomie	<span style="color:grey; font-size:.7em;">d'après les cours du Pr. R. Seizeur</span>
-					<ul class="subdeck">
-						<li>Organisation générale du système nerveux</li>
-							Système nerveux central
+				<div class="grid-5">
+					<h2>Neuro-anatomie	<span class="prof">d'après les cours du Pr. R. Seizeur</span></h2>
+					<br><br>
+						Organisation générale du système nerveux
+
 						<ul class="subdeck">
+							<li class="progress"><b>Système nerveux central</b></li>
 							<li class="done">Les enveloppes</li>
 							<li class="done">La moelle spinale</li>
 							<li class="done">Le tronc cérébral</li>
 							<li class="progress">Le cervelet</li>
 							<li class="todo">Le cerveau</li>
 							<li class="todo">Vascularisation de l'encéphale</li>
-					</ul>
- 					Système nerveux périphérique
-					<ul class="subdeck">
+							<li class="progress"><b>Système nerveux périphérique</b></li>
 						<li class="progress">Les nerfs crâniens</li>
 						<li class="todo">Les nerfs périphériques</li>
-				</ul>
 
 					</ul>
-					<ul class="subdeck">
-						<li>Organes des sens</li>
+					<br>Organes des sens
 						<ul class="subdeck">
 							<li class="todo">L'olfaction</li>
 							<li class="todo">La gustation</li>
@@ -63,20 +70,40 @@ UE20 Système neurosensoriel et psychiatrie
 							<li class="todo">Les voies auditives</li>
 							<li class="todo">Les voies visuelles</li>
 					</ul>
-				</ul>
 
+				</div>
+				<div class="grid-1">
+					<br><br>
+					<a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211001.apkg">
+					<img src="img/downloadIcon.svg"/></a>
+					<img src="img/apercuNeuroAnat.png" width="100%"/>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="grid-5">
+					<h2>Sémiologie</h2>
+
+					<ul class="subdeck">
+							<li class="progress">ORL <span class="prof">d'après les cours du Pr. J. Prévot</span></li>
+							<li class="todo">Ophtalmique</li>
 					</ul>
 				</div>
-				<br>
-				<div style="float:right;">
+				<div class="grid-1">
+					<br><br>
 					<a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211001.apkg">
 				<img src="img/downloadIcon.svg"/></a>
-			</div>
-			</div>
+					<img src="img/apercuSemio.png" width="100%"/>
 
+				</div>
 
+			</div>
 
 		</section>
+	</div>
 
 <hr>
 <section class="center">
@@ -103,5 +130,23 @@ télécharger le paquet à nouveau et de l'importer dans anki.</p>
 
 	</div>
 
+	<script>
+	function openUE(evt, UE) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(UE).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
 </body>
 </html>
