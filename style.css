@@ -74,7 +74,7 @@ header h2 {
   color: white;
   font-size: 1em;
   letter-spacing: 1px;
-  opacity: .6;
+  opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   font-weight: 700;
   z-index:2;
@@ -197,7 +197,8 @@ footer hr {
 position:absolute;
 bottom:0;
 border: 1px solid #ccc;
-background-color: rgba(204, 204, 204, 0.4);
+border-bottom: none;
+background-color: rgba(12, 0,113, 0.55);
 margin-right: auto;
 margin-left: auto;
 max-width: 50em;
@@ -375,8 +376,9 @@ span.prof{color:grey; font-size:.7em;}
 .tabcontent {
  display: none;
  padding: 6px 12px;
- border: 1px solid #ccc;
- border-top: none;
+ border-left: 1px solid #ccc;
+ border-right: 1px solid #ccc;
+
 }
 
 .tabcontent {
