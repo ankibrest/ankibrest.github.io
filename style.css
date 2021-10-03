@@ -198,7 +198,7 @@ position:absolute;
 bottom:0;
 border: 1px solid #ccc;
 border-bottom: none;
-background-color: rgba(12, 0,113, 0.55);
+background-color: rgba(12, 0,113, 0.75);
 margin-right: auto;
 margin-left: auto;
 max-width: 50em;
@@ -376,8 +376,7 @@ span.prof{color:grey; font-size:.7em;}
 .tabcontent {
  display: none;
  padding: 6px 12px;
- border-left: 1px solid #ccc;
- border-right: 1px solid #ccc;
+ border: 1px solid #ccc;
 
 }
 
