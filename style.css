@@ -197,7 +197,7 @@ position:absolute;
 bottom:0;
 border: 1px solid #ccc;
 border-bottom: none;
-background-color: rgba(77, 134,187, 0.75);
+background-color: rgba(77, 134,187, 0.5);
 /* background-color: rgba(12, 0,113, 0.65); */
 margin-right: auto;
 margin-left: auto;
@@ -368,7 +368,7 @@ span.prof{color:grey; font-size:.7em;}
 
 /* Create an active/current tablink class */
 .tab button.active {
- background-color: rgba(91, 146,193, 1);
+ background-color: rgba(112, 160,198, 1);
  color: white;
 }
 
