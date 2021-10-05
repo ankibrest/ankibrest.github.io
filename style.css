@@ -482,12 +482,12 @@ bottom:0px
  top: 50%;
  width: auto;
  padding: 16px;
- color: yellow;
+ color: white;
  font-weight: bold;
  font-size: 40px;
  user-select: none;
- background-color: rgba(255,255,255,.2);
-
+ background-color: rgba(77, 134,187, 0.5);
+border:1px solid #ccc;
 }
 
 /* Position the "next button" to the right */
@@ -505,8 +505,7 @@ bottom:0px
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
- opacity:1;
- background-color:yellow;
+color:yellow;
 }
 
 /* The dot/bullet/indicator container */
