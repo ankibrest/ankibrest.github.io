@@ -52,7 +52,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  height: 600px;
+  height: 430px;
 position: relative;
 }
 
@@ -367,7 +367,7 @@ border-top:none;
 
 .card {
   font-family: times;
-  font-size: .65em;
+  font-size: .75em;
   text-align: justify;
   margin: 0 auto;
  color: white;
@@ -482,12 +482,11 @@ bottom:0px
  top: 50%;
  width: auto;
  padding: 16px;
- color: white;
+ color: yellow;
  font-weight: bold;
  font-size: 40px;
  user-select: none;
- background-color: black;
- opacity:0.2;
+ background-color: rgba(255,255,255,.2);
 
 }
 
@@ -506,8 +505,8 @@ bottom:0px
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
- background-color: rgba(0,0,0,0.8);
- color: white;
+ opacity:1;
+ background-color:yellow;
 }
 
 /* The dot/bullet/indicator container */
