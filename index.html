@@ -41,72 +41,78 @@
 				slides[idx].style.display = 'block';
 			}
 			</script>
-
+			<div class="tab">
+				<button class="tablinks" onclick="openUE(event, 'loco')">UE18</button>
+				<button class="tablinks" onclick="openUE(event, 'infectio')">UE19</button>
+				<button class="tablinks" onclick="openUE(event, 'neuro')" id="defaultOpen">UE20</button>
+				<button class="tablinks" onclick="openUE(event, 'ecni')" id="right"> ECNi</button>
+				<button class="tablinks" onclick="openUE(event, 'tutoriels')" id="right"> Tutoriels</button>
+			</div>
 
 				</div>
+
 			</div>
 	</header>
 
 	<div class="container">
 
-		<div class="tab">
-
-  <button class="tablinks" onclick="openUE(event, 'loco')">UE18</button>
-	<button class="tablinks" onclick="openUE(event, 'infectio')">UE19</button>
-
-	<button class="tablinks" onclick="openUE(event, 'neuro')" id="defaultOpen">UE20</button>
-
-</div>
-
-
 
 
 		<div id="loco" class="tabcontent">
-			<h1>Appareil locomoteur</h1>
-			<ul class="subdeck">
-				<li class="todo">Métabolisme osseux</li>
-				<li class="todo">Protéines de l'inflammation</li>
-				<li class="todo">Arthrose et arthrite</li>
-				<li class="todo">Syndrome des défilés</li>
-				<li class="todo">État inflammatoire et examen anatomopathologique</li>
-				<li class="todo">Colonne vertébrale</li>
-				<li class="todo">Sémiologie de la hanche</li>
-				<li class="todo">Sémiologie de l'épaule</li>
-				<li class="todo">Imagerie et os</li>
-				<li class="todo">Analyse de la marche</li>
-				<li class="todo">Sémiologie de la cheville</li>
-				<li class="todo">Sémiologie du coude</li>
-				<li class="todo">Sémiologie du poignet</li>
-				<li class="todo">Bases des traitements goutte et polyarthrite rhumatoïde</li>
-				<li class="todo">Sémiologie des troubles de la marche de l’enfant</li>
-				<li class="todo">Approche du handicap</li>
-		</ul>
+			<section class="experience">
+				<div class="row">
+					<h1>Appareil locomoteur</h1>
+					<div class="grid-6">
+						<ul class="subdeck">
+							<li class="todo">Métabolisme osseux</li>
+							<li class="todo">Protéines de l'inflammation</li>
+							<li class="todo">Arthrose et arthrite</li>
+							<li class="todo">Syndrome des défilés</li>
+							<li class="todo">État inflammatoire et examen anatomopathologique</li>
+							<li class="todo">Colonne vertébrale</li>
+							<li class="todo">Sémiologie de la hanche</li>
+							<li class="todo">Sémiologie de l'épaule</li>
+							<li class="todo">Imagerie et os</li>
+							<li class="todo">Analyse de la marche</li>
+							<li class="todo">Sémiologie de la cheville</li>
+							<li class="todo">Sémiologie du coude</li>
+							<li class="todo">Sémiologie du poignet</li>
+							<li class="todo">Bases des traitements goutte et polyarthrite rhumatoïde</li>
+							<li class="todo">Sémiologie des troubles de la marche de l’enfant</li>
+							<li class="todo">Approche du handicap</li>
+						</ul>
+					</div>
+				</div>
+	</section>
+
 		</div>
-		<div id="infectio" class="tabcontent"><h1>Agents infectieux, hygiène: aspects généraux</h1></div>
+
+		<div id="infectio" class="tabcontent">
+			<section class="experience">
+				<div class="row">
+					<h1>Agents infectieux, hygiène: aspects généraux</h1>
+					<div class="grid-6">
+					</div>
+				</div>
+		</section>
+		</div>
 
 		<div id="neuro" class="tabcontent">
-		<section class="education">
-			<h1>
-Système neurosensoriel et psychiatrie
-</h1>
-		</section>
-
-
 		<section class="experience">
 			<div class="row">
-				<div class="grid-5">
-					<h2>Neuro-anatomie	<span class="prof">d'après les cours du Pr. R. Seizeur</span></h2>
+				<h1>Système neurosensoriel et psychiatrie</h1>
+				<div class="grid-6">
+					<h2>Neuro-anatomie	<span class="prof">d'après les cours du Pr. R. Seizeur</span> </h2>
 					<br><br>
 						Organisation générale du système nerveux
-
 						<ul class="subdeck">
 							<li class="progress"><b>Système nerveux central</b></li>
 							<li class="done">Les enveloppes</li>
 							<li class="done">La moelle spinale</li>
 							<li class="done">Le tronc cérébral</li>
 							<li class="done">Le cervelet</li>
-							<li class="todo">Le cerveau</li>
-							<li class="progress">Vascularisation de l'encéphale</li>
+							<li class="progress">Le cerveau</li>
+							<li class="done">Vascularisation de l'encéphale</li>
 							<li class="progress"><b>Système nerveux périphérique</b></li>
 						<li class="progress">Les nerfs crâniens</li>
 						<li class="todo">Les nerfs périphériques</li>
@@ -120,20 +126,14 @@ Système neurosensoriel et psychiatrie
 							<li class="todo">Les voies auditives</li>
 							<li class="todo">Les voies visuelles</li>
 					</ul>
-
-				</div>
-				<div class="grid-1">
-					<br><br>
-					<a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211003.apkg">
-					<img src="img/downloadIcon.svg"/></a>
-
+					<a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211003.apkg">TÉLÉCHARGER</a>
 				</div>
 
 			</div>
 
 			<div class="row">
 
-				<div class="grid-5">
+				<div class="grid-6">
 					<h2>Sémiologie</h2>
 
 					<ul class="subdeck">
@@ -145,15 +145,9 @@ Système neurosensoriel et psychiatrie
 
 
 				</div>
-				<div class="grid-1">
-					<br><br>
-					<!-- <a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211001.apkg">
-				<img src="img/downloadIcon.svg"/></a> -->
-
-				</div>
 			</div>
 				<div class="row">
-				<div class="grid-5">
+				<div class="grid-6">
 					<h2>Cours indépendants</h2>
 
 					<ul class="subdeck">
@@ -174,19 +168,49 @@ Système neurosensoriel et psychiatrie
 				</div>
 
 
-				<div class="grid-1">
-					<br><br>
-					<!-- <a href="ANKI/DFGSM3__UE20 - Neuropsychiatrie__Neuroanatomie20211001.apkg">
-				<img src="img/downloadIcon.svg"/></a> -->
-
-				</div>
 			</div>
+			</div>
+
+			<div id="ecni" class="tabcontent">
+				<section class="experience">
+					<div class="row">
+						<h1>Fiches ECNi</h1>
+						<div class="grid-6">
+						</div>
+					</div>
+			</section>
+			</div>
+
+			<div id="tutoriels" class="tabcontent">
+				<section class="experience">
+					<div class="row">
+						<h1>Tutoriels</h1>
+						Des tutoriels peuvent être ajoutés sur demande, contactez-nous.
+						<div class="grid-6">
+							<h2 style="border-left:2px solid green;">Comment importer les fiches anki?</h2>
+							<ol>
+								<li>Télécharger le paquet .apkg</li>
+								<li>Dans Anki: Fichier > Importer > Sélectionner le fichier .apkg </li>
+								<li> C'est fait!</li>
+							</ol>
+							<h2 style="border-left:2px solid green;">Comment ajouter des moyens mnemotechnique à une fiche?</h2>
+							<ol>
+								<li>Passer en mode édition: sur la fiche appuyer sur la touche <b>e</b></li>
+								<li>En fonction du type de fiche:</li>
+								<ul>
+									<li>Fiche question / réponse (DFGSM_main): ajouter l'info au champ <tt>"Answer"</tt><br>  <img src="img/editAnkiDFGSMmain.png"/></li>
+									<li>Fiche Anatomie (DFGSM_Anat): ajouter au champ <tt>"Extra"</tt> <br>  <img src="img/editAnkiDFGSMAnat.png"/></li>
+								</ul>
+							</ol>
+						</div>
+					</div>
+			</section>
 			</div>
 
 		</section>
 	</div>
 
-<hr>
+<div class="container" style="background-color:transparent;">
 <section class="center">
 	<h1>Mise à jour des fiches</h1>
 	<p style="font-size:.7em;">Ces fiches sont susceptibles d'être mises à jour. Surveillez la date
@@ -195,7 +219,7 @@ pour être tenu au courant. (connexion internet nécessaire) <br> Pour procéder
 télécharger le paquet à nouveau et de l'importer dans anki.</p>
 <img src="img/exempleVersion.png"/>
 </section>
-<hr>
+
 <section class="center">
 	<h1>Comment contribuer?</h1>
 	<p>Il est possible de contribuer au projet avec vos propres fiches, que vous
@@ -203,7 +227,7 @@ télécharger le paquet à nouveau et de l'importer dans anki.</p>
 	contact: ankibrest@gmail.com
 
 </section>
-
+</div>
 		<footer class="center">
 
 			<span>Bonne journée</span>
