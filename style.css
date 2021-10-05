@@ -52,7 +52,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  height: 300px;
+  height: 600px;
 position: relative;
 }
 
@@ -120,18 +120,15 @@ footer hr {
 
 @media screen and (min-width: 30em) {
   header {
-    height: 500px;
+    height: 550px;
   }
 
   header h1 {
     font-size: 3.2em;
-    top: 100px;
+    top: 20px;
   }
 
-  header p {
-    top: 85px;
-    font-size: 1.5em;
-  }
+
 }
 
 
@@ -312,7 +309,8 @@ span.prof{color:grey; font-size:.7em;}
  border-left: 1px solid transparent;
  border-right: 1px solid transparent;
  /* border-top: 1px solid #ccc; */
- background-color: rgba(0,0,0,.2);
+ /* background-color: rgba(9,9,121,.4); */
+ background-color: transparent;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -334,6 +332,7 @@ span.prof{color:grey; font-size:.7em;}
 /* Change background color of buttons on hover */
 .tab button:hover {
   color: yellow;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Create an active/current tablink class */
@@ -362,3 +361,178 @@ border-top:none;
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+
+/* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS *//* ANKI CARD CSS */
+
+.card {
+  font-family: times;
+  font-size: .65em;
+  text-align: justify;
+  margin: 0 auto;
+ color: white;
+ width: 60%;
+margin-top:10px;
+}
+
+
+
+#header{
+font-family: calibri;
+font-size:.85em;
+font-weight:bold;
+background: linear-gradient(0deg, #040439 0%, #1029dd 100%);padding: 10px 10px 0px 10px;
+background: #090979;
+padding: 10px 10px 0px 10px;
+%border: solid 1px white;
+border-radius: 5px 5px 0px 0px;
+border-bottom:none;
+margin: 0 auto;
+}
+
+#level{
+height:10px;
+}
+
+
+.content{
+border-radius: 0px 0px 5px 5px;
+border-top: none;
+background: black;
+padding:10px;
+}
+
+
+#question{
+padding:10px;
+border-left: solid white 2px;
+background-color: rgba(255,255,255,0.05);
+}
+
+#question.type0{
+border-left: solid 2px blue;
+}
+
+#question.type1{
+border-left: solid 2px orange;
+}
+
+#question.type2{
+border-left: solid 2px green;
+}
+
+
+
+hr{
+width: 90%;
+}
+
+.anatomyContent{padding:0px;width:100%;position:relative;}
+
+.plate{
+width: 80%;
+position:relative;
+}
+
+.overlay{
+
+width: 80%;
+position:absolute;
+left:0px;top:0px;
+
+}
+
+.legend{
+font-size: 1.2em;
+text-transform: uppercase;
+font-weight: bold;
+text-align: left;
+}
+#notvisible{
+color: transparent;
+}
+
+
+
+/* SLIDESHOW */
+
+/* Slideshow container */
+.container#headContain{
+  background-color: transparent;
+
+}
+.slideshow-container {
+ position: relative;
+background-color: transparent;
+height:300px;
+bottom:0px
+}
+
+/* Slides */
+.mySlides {
+ display: none;
+ padding: 20px;
+ text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+ cursor: pointer;
+ position: absolute;
+ top: 50%;
+ width: auto;
+ padding: 16px;
+ color: white;
+ font-weight: bold;
+ font-size: 40px;
+ user-select: none;
+ background-color: black;
+ opacity:0.2;
+
+}
+
+/* Position the "next button" to the right */
+.prev {
+ position: absolute;
+ left: 0;
+ border-radius: 2em 2em 2em 2em;
+}
+
+.next {
+ position: absolute;
+ right: 0;
+ border-radius: 2em 2em 2em 2em;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+ background-color: rgba(0,0,0,0.8);
+ color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+ text-align: center;
+ padding: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+ cursor: pointer;
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: white;
+ opacity: 0.5;
+ border-radius: 50%;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+ opacity:1;
+}
+
+/* Add an italic font style to all quotes */
+q {  text-shadow: 0 1px 0 rgba(0,0,0, 0.5);}

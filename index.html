@@ -19,26 +19,139 @@
 
 	<header>
 		<h1>ankibrest</h1>
-		<div class="container">
 
-				<div class="gallery">
-					<div id="slideshow">
-
-					<br>
-						<div class="grid-6" style="padding-bottom:20px;">
-							<img src="img/apercuSemio.png" max-height="450px" onclick="changeSlide()" id="defaultApercu"/ style="margin:0 auto;">
-							<img src="img/apercuNeuroAnat.png" max-height="450px" style="display:none;margin:0 auto;" onclick="changeSlide()"/>
-				</div>
+		<div class="container" id ="headContain">
+			<div class="dot-container">
+			 <span class="dot" onclick="currentSlide(1)"></span>
+			 <span class="dot" onclick="currentSlide(2)"></span>
+			 <span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 
+			<!-- Slideshow container -->
+<div class="slideshow-container">
+
+ <!-- Full-width slides/quotes -->
+ <div class="mySlides">
+	 <q>Fiches concises, complètes et interactives</q>
+	 <div class="card">
+ 	<div id="header">
+ 	  <span id="item">UE 20: Organisation générale du système nerveux</span> <br><br>
+ 	</div>
+
+
+ 	<div class="content">
+
+ 	<div id="question" class="type2">
+ 	Décrire l'examen clinique à conduire face à un patient otalgique
+ 	</div>
+
+ 	<br>
+
+ 	<div class="anatomyContent">
+ 	examen doit être <span style="background-color: rgb(239, 41, 41);"><b>COMPLET</b></span> et <span style="background-color: rgb(239, 41, 41);"><b>BILATÉRAL</b></span> même si otalgie unilatérale:<br><ol><li>examen <span style="background-color: rgb(114, 159, 207);"><b>otologique</b></span>: pavillon, conduit auditif externe, tympan</li><li>examen région <b style="background-color: rgb(138, 226, 52);">péri-auriculaire</b>: parotide, ATM, région mastoïdienne et sous-digastrique</li><li>examen <span style="background-color: rgb(173, 127, 168);"><b>neurologique</b></span> cranio-facial: examen paires crâniennes</li><li>examen de la<b> bouche, denture, nez, cavum et pharyngolarynx</b>: attention +++ aux <span style="background-color: rgb(255, 255, 0);"><font color="#ef2929">cancers des voies aéro-digestives supérieures (<b>VADS</b>).&nbsp;</font></span></li></ol>
+ 	</div>
+ 	</div>
+ 	</div>
+ </div>
+
+ <div class="mySlides">
+	 <q>2 Fiches par structure anatomique: <b><span style="color:yellow;">situer</span></b></q>
+	 <div class="card">
+	   <div id="header">
+	       <span id="item">UE 20: Organisation générale du système nerveux</span> <br><br>
+	   </div>
+
+	   <div class="content">
+
+	   <div id="question" class="type2">
+	   Où est situé:
+	       <div class="legend">
+Noyau rouge
+	       </div>
+	   </div>
+
+	   <br>
+
+	     <div class="anatomyContent">
+
+	           <div class="plate">
+	           <img src="img/noyauRouge_plate.svg"/>
+	           </div>
+
+	     </div>
+	   </div>
+	 </div>
+ </div>
+
+ <div class="mySlides">
+	 <q>2 Fiches par structure anatomique: <b><span style="color:yellow;">identifier</span></b></q>
+	 <div class="card">
+	   <div id="header">
+	       <span id="item">UE 20: Organisation générale du système nerveux</span> <br><br>
+	   </div>
+
+
+	   <div class="content">
+
+	   <div id="question" class="type1">
+	   Quel est le nom de la structure anatomique mise en évidence?
+	       <div class="legend">
+
+	       </div>
+	   </div>
+
+	   <br>
+
+	     <div class="anatomyContent">
+
+	           <div class="plate">
+	           <img src="img/noyauLenticulaire_plate.svg"/>
+	           </div>
+
+	           <div class="overlay">
+	             <img src="img/noyauLenticulaire.svg"/>
+	           </div>
+	     </div>
+	   </div>
+	 </div>
+ </div>
+
+ <!-- Next/prev buttons -->
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+
+				<div class="gallery">
+
+
 			<script>
-			var slideshow = document.getElementById('slideshow');
-			var slides = slideshow.getElementsByTagName('img');
-			var idx = 0;
-			function changeSlide() {
-				slides[idx].style.display = 'none';
-				idx = (idx + 1) % slides.length;
-				slides[idx].style.display = 'block';
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			    if (n < 1) {slideIndex = slides.length}
+			    for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			    }
+			    for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
 			}
 			</script>
 			<div class="tab">
@@ -106,12 +219,12 @@
 					<br><br>
 						Organisation générale du système nerveux
 						<ul class="subdeck">
-							<li class="progress"><b>Système nerveux central</b></li>
+							<li class="done"><b>Système nerveux central</b></li>
 							<li class="done">Les enveloppes</li>
 							<li class="done">La moelle spinale</li>
 							<li class="done">Le tronc cérébral</li>
 							<li class="done">Le cervelet</li>
-							<li class="progress">Le cerveau</li>
+							<li class="done">Le cerveau</li>
 							<li class="done">Vascularisation de l'encéphale</li>
 							<li class="progress"><b>Système nerveux périphérique</b></li>
 						<li class="progress">Les nerfs crâniens</li>
