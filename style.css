@@ -381,7 +381,8 @@ margin-top:10px;
 font-family: calibri;
 font-size:.85em;
 font-weight:bold;
-background: linear-gradient(0deg, #040439 0%, #1029dd 100%);padding: 10px 10px 0px 10px;
+background: linear-gradient(0deg, #040439 0%, #1029dd 100%);
+padding: 10px 10px 0px 10px;
 background: #090979;
 padding: 10px 10px 0px 10px;
 %border: solid 1px white;
@@ -398,7 +399,7 @@ height:10px;
 .content{
 border-radius: 0px 0px 5px 5px;
 border-top: none;
-background: black;
+background: rgba(0,0,0,0.85);
 padding:10px;
 }
 
