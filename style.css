@@ -298,6 +298,8 @@ ul.subdeck{
 li.done { list-style-image: url(img/liDone.svg); }
 li.todo { list-style-image: url(img/liTodo.svg); color:red; font-weight: bold;}
 li.progress { list-style-image: url(img/liProgress.svg); color:yellow;}
+li.download { list-style-image: url(img/downloadIcon.svg); color:#1b9edf; }
+
 span.prof{color:grey; font-size:.7em;}
 
 
