@@ -56,10 +56,10 @@ text-align: justify;
 }
 
 #intitule.A{
-color: var(--rankAcolor);
+color: #30BCED;
 }
 #intitule.B{
-color: var(--rankBcolor);
+color: #FC5130;
 }
 #intitule.C{
 color: var(--rankCcolor);
@@ -79,10 +79,10 @@ text-align: right;
 }
 
 #rank.A{
-background-color: var(--rankAcolor);
+background-color: #30BCED;
 }
 #rank.B{
-background-color: var(--rankBcolor);
+background-color: #FC5130;
 }
 #rank.C{
 background-color: var(--rankCcolor);
