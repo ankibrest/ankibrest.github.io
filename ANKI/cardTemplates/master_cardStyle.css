@@ -1,4 +1,11 @@
+.night_mode { }
 
+.card {
+height: 80%;
+  font-family: times;
+  font-size: 13px;
+  text-align: justify;
+  margin: 0 auto;
   --rankAcolor: #30BCED;
   --rankBcolor: #FC5130;
   --rankCcolor: #dedede;
