@@ -1,0 +1,180 @@
+
+  --rankAcolor: #30BCED;
+  --rankBcolor: #FC5130;
+  --rankCcolor: #dedede;
+ color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 450px) {
+.card{
+width: 100%;
+}
+}
+@media (min-width: 450px) {
+.card{
+width: 400px;
+}
+}
+
+
+#header{
+font-family: arial;
+font-size:.65em;
+background: linear-gradient(0deg, #040439 0%, #1029dd 100%);padding: 10px 10px 0px 10px;
+background: #090979;
+padding: 10px 10px 0px 10px;
+%border: solid 1px white;
+border-radius: 5px 5px 0px 0px;
+border-bottom:none;
+margin: 0 auto;
+}
+
+#item{
+font-weight: bold;
+text-transform: uppercase;
+font-size: 1.1em;
+}
+
+#intitule{
+text-transform: uppercase;
+font-weight: bold;
+color: #bcbcbc;
+text-align: justify;
+}
+
+#intitule.A{
+color: var(--rankAcolor);
+}
+#intitule.B{
+color: var(--rankBcolor);
+}
+#intitule.C{
+color: var(--rankCcolor);
+}
+
+#intitule.i{
+color: #3cba5f;
+}
+
+#rank{
+color: #fff;
+border-radius: 25%;
+padding: 5px;
+font-size: 1em;
+font-weight: bold;
+text-align: right;
+}
+
+#rank.A{
+background-color: var(--rankAcolor);
+}
+#rank.B{
+background-color: var(--rankBcolor);
+}
+#rank.C{
+background-color: var(--rankCcolor);
+}
+
+#rank.i{
+background-color: #3cba5f;
+}
+
+#level{
+height:10px;
+
+}
+
+
+.content{
+%border: solid 1px;
+border-radius: 0px 0px 5px 5px;
+border-top: none;
+display:background;
+padding: 0px 10px 10px 10px;
+background: black;
+min-height: 200px;
+
+}
+
+
+#question{
+padding:10px;
+border-left: solid white 2px;
+background-color: rgba(255,255,255,0.05);
+}
+
+#question.type0{
+border-left: solid 2px blue;
+}
+
+#question.type1{
+border-left: solid 2px orange;
+}
+
+#question.type2{
+border-left: solid 2px green;
+}
+
+
+
+#contentAnswer{
+padding:3px;
+%border-left: solid white 2px;
+%background-color: rgba(255,255,255,0.05);
+}
+
+hr{
+width: 90%;
+}
+
+ul { padding-left: 1.2em; }
+
+
+.cloze{
+color: yellow;
+}
+
+input#typeans{
+background-color: grey;
+border: none;
+color: white;
+padding: 0.7em;
+font-size: 12px;
+width: 90%;
+}
+
+#incorrect,#correction, #correct{
+font-family: times;
+font-size: 12px;
+}
+
+#correct{
+background: green;
+padding: 0.7em;
+
+}
+#incorrect{
+background: red;
+padding: 0.7em;
+}
+
+#image{
+	padding: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.typePrompt{
+background-color: grey;
+border: none;
+color: white;
+padding: 0.7em;
+width:100÷;
+}
