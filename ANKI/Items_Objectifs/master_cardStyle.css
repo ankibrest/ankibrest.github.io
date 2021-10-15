@@ -186,42 +186,6 @@ padding: 0.7em;
 width:100÷;
 }
 
-ul#rankDescription{
-	/* position: relative; */
-	list-style: none;
-  list-style-position: outside;
-  text-transform: uppercase;
-	/* margin-left: 0;
-  text-align: justify; */
-}
-
-ul#rankDescription li{
- padding-top:1em;
- position:relative;
- padding-left: 2em;
-}
-
-/* ul#rankDescription li:after{
- padding-left:1em;
-} */
-
-ul#rankDescription li:before {
-position: absolute;
-left:0;
-top:0.65em;
-  color: #fff;
-  border-radius: 25%;
-  padding: 5px;
-  margin-right: 5px;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-ul#rankDescription li.A:before {
-content: "A";
-background-color: #30BCED;
-}
-ul#rankDescription li.B:before {
-content: "B";
-background-color: #FC5130;
+table.descriptionTable>td{
+  padding-bottom: 5em;
 }
